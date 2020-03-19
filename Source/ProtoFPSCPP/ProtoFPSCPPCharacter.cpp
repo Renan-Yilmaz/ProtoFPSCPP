@@ -142,7 +142,7 @@ void AProtoFPSCPPCharacter::LookUpAtRate(float Rate)
 	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 void AProtoFPSCPPCharacter::Interact() {
-	if (Hit.getActor())
+	if (Hit.IsValidBlockingHit())
 	{
 		if (GEngine)
 		{
