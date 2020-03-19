@@ -33,12 +33,8 @@ public:
 	float BaseLookUpRate;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Camera)
 	float RaycastDistance = 500.f;
-
-	UPROPERTY(Category = gameplay, meta = (AllowPrivateAccess = "true"))
 	FHitResult Hit;
-	UPROPERTY(Category = gameplay, meta = (AllowPrivateAccess = "true"))
 	FVector Start;
-	UPROPERTY(Category = gameplay, meta = (AllowPrivateAccess = "true"))
 	FVector End;
 
 
